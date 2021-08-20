@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is the relearning base of my html knowledge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My first document for the freeCodeCamp HTML Course</title>
+        <script></script>
+        <style=stylesheet.ccs></style>
+    </head>
+    <body style="background-color: #cecece;">
+            <!--This is a comment which will be ignored by the browser.
+            Good for notes or commenting out code!
+            Don't overdo it, try to let the code speak for itself
+        -->
+        <h1>This should be a headline!</h1>
+        <p>This text is on a new paragraph.</p>
+        <p>This is another new paragraph with <b>bold</b> and <i>italic</i> style.</p>
+        <h2>This should be a smaller headline (you can use headers from h1 to h6).</h2>
+        <br>
+        <br>
+        <p>This new paragraph after two breaks, which should make a greater space between the h2 and this paragraph.</p>
+        <hr/>
+        <p><big>This will be bigger than</big><small> this text!</small></p>
+        <p>Subscript and Superscript: 10<sup>2</sup> and H<sub>2</sub>O</p>
+        <h3>Style and Color Options with basic css (will code this hear not in a seperate stylesheet file, which would be best practise.</h3>
+        <p style="color:rgb(46, 46, 38); background-color:rgb(182, 182, 204); border:3px, royalblue, solid;">this should not be aquamarine text anymore because I'm changing every style in seconds to play with the color picker and I can't help myself!</p>
+        <!--next up tags to formating: Header, Main & Footing:-->
+        <header>
+            <h2>header</h2>
+            <nav>
+                <!-- navigational links, lists goes in here!-->
+            </nav>
+        </header>
+        <main>
+            <h2>main</h2>
+            <article>
+                <h3>article</h3>
+                <!--this is an article, this and other parts can be broken up with sections-->
+                <!--wonder when we come to ids to use with css or js to identify and target specific parts of the page-->
+                <section>
+                    <h4>Section One</h4>
+                    <h5>The cookbook pages 12 to 24</h5>
+                    <aside>This aside tag has nothing to do with the article, it can be used for adds maybe!</aside>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <h2>footer</h2>
+        </footer>
+        
+        <h2>Links!</h2>
+        <a href="https://google.com"><big>This Link let's you navigate to google.</big></a>
+        <br>
+        <a href="https://google.com" target="_blank"><big>This Link let's you navigate to google in another tab</big></a>
+        <p>You can link to other websites in the same directory. I will create a simple one and link it in the next line.</p>
+        <a href="another.html">going to page 2</a>
+        <!-- Linking to files is done the same way!-->
+        
+        <h2>Images</h2>
+        <a href="https://www.campagnolo.com/DE/de">
+            <img width="350" src="https://cdn.road.cc/sites/default/files/styles/schema_org/public/12-best-campagnolo-equipped-road-bikes-feb-2021.jpg" alt="Some really nice roadbikes"/>
+        </a>
+        <h2>Videos and Youtube</h2>
+        <p>Using the video tag with controls and width="300" thumbnail image is also possible!</p>
+        <video src="macro_test.mp4" controls width="350" poster="Orioris.png">This is a macro_test video in foundry vtt.</video>
+        <br>
+        <hr/>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg?start=4887" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        <h2>Lists</h2>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Orange</li>
+        </ul>
+        <ol type="a">
+            <li>Bread</li>
+            <li>Butter</li>
+            <li>Cheese</li>
+        <ol><li>Goat</li>
+            <li>Sheep</li>
+            <li>Cow</li>
+        </ol>
+            <li>Salami</li>
+        </ol>  
+        <dl>
+            <dt>Panini</dt>
+            <dd>it's one kind of sandwich</dd>
+        </dl>
+        <h2>Tables</h2>
+        <p>A little bit more complicated.</p>
+        <table>
+            <thead>
+                <caption><h3>Table of numbers</h3></caption>
+                <tr>
+                    <th>num 1</th> <!-- should only be one column-->
+                    <th>num 2</th>
+                    <th>num 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>one</td> <!-- should only be one column-->
+                    <td>two</td>
+                    <td>three</td>
+                </tr>
+                <tr>
+                    <td>for</td> <!-- should only be one column-->
+                    <td>five</td>
+                    <td>six</td>
+                </tr>
+            </tbody>
+        </table> <!-- ids will be really important to change things here with js or css; or with classes-->
+        <h2>Containers:divs & spans</h2>
+        <p>Here we will learn about containers. span is an inline container, div is a block container!</p>
+            <span>span1</span>
+            <span>span2</span>
+            <span>span3</span>
+            <br>
+            <br>
+            <div>div1</div>
+            <div>div2</div>
+            <div>div3</div>
+        <h2>Input tags! User can use these to input information.</h2>
+        <p>To input we will have to use js though.</p>
+        <input type="text" />
+        <br>
+        <input type="password" />    
+        <br>
+        <input type="text" value="Enter your Username"/>
+        <br>
+        <textarea>You can type lot's of text and even resize this.</textarea>
+        <br>
+        <input name="spellingTest" value="" type="text"/> 
+        <br>
+        <h2>Forms</h2>
+        <form>
+            <input type="text"/>
+        </form>
+        <h2>iFrames</h2>
+        <iframe src="another.html" frameborder="0" >Sorry you cant few it.</iframe>
+        <h2>Meta tags!</h2>
+        <p>there are a lot of meta tags and they are used to provide meta data</p>
+    </body>      
+</html>

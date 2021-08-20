@@ -11,7 +11,7 @@ for (var property in myself) {
 /* random number quizz
 trying a quizz to guess a random number and getting hints about to small or to big
 */
-let randomNumber = Math.round(Math.random() *100);
+let randomNumber = Math.round(Math.random() *10);
 console.log(randomNumber);
 //this was just a test, if I understood how to get to a randon number
 //now I need an input from the user to get an estimate for the number to check against
