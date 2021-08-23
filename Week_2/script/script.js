@@ -1,7 +1,7 @@
 
 var wordTemplate = 'cat';
 var i = 0;
-var displayWord = document.querySelector("#wordTemplate");
+//var displayWord = document.querySelector("#wordTemplate");
 
 
 function compareText() {
@@ -11,8 +11,8 @@ function compareText() {
     document.getElementById('wordTemplate').innerHTML = wordTemplate;
 
 if (typedWord.value === wordTemplate) {
-    whatYouTyped.innerHTML = 'Success!';
     i = i+1; //counts how many success the user got!
+    outcome.innerHTML = 'Success! Streak of: ' + i;
     console.log(i);
     document.getElementById("typedWord").value = ""; //resets the input field!
     var possValues = ["cat", "dog", "horse", "cow", "truth", "lie", "known", "uncomprehensible", "visible", "unseen", "incorrigible", "fox", "beauty", "rose", "grace", "forgiveness", "cross", "adams", "belgium", "value", "praise", "life", "zaphod", "arthur", "home", "farm", "city", "country", "rural", "urban"];
@@ -25,11 +25,12 @@ if (typedWord.value === wordTemplate) {
 }
 
 /*
-Polish:
+polish:
 *get the first word to display immediatly.
 *showing of the highscore
 
-Possible new features:
+
+possible new features:
 *changing the difficulty with more arrays of words in reference to the score (presented by the variable 'i')
 *spellchecking while typing
 

@@ -10,14 +10,13 @@
 </head>
 <body>
     <header>
-        <h1>This is a typing Game. Please start with typing 'cat'.</h1>        
+        <h1>This is a typing Game.</h1>        
     </header>
 
     <main>
-        <p>Please type this:</p>        
-        <div id="wordTemplate">
-          
-        </div>
+        <div class="container">
+            <span>Please type this: </span>
+            <div id="wordTemplate"></div>
         <label>
             <span>Please type here: </span>
                 <input type="text" id="typedWord"
@@ -25,8 +24,8 @@
                     maxlength="32" 
                     oninput = "compareText(this)">
         </label>
-        <div id="whatYouTyped">
-
+        <div id="whatYouTyped"></div>
+        <div id="outcome"></div>
         </div>
 
     </main>
