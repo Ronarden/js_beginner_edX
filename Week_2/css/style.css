@@ -6,3 +6,7 @@ body{
     background: cadetblue;
     width: 150px;
 }
+
+#typedWord{
+    border: 2px;
+}

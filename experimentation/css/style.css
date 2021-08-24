@@ -1,0 +1,20 @@
+body div
+{
+    background-color: lightgray;
+    padding: 20px;
+    margin: 15px;
+    border: double;
+    }
+
+#box1
+{
+    border: 2px solid #000;
+    background-color: #afafaf;
+}
+
+
+.box6
+{
+    border: 2px solid #000;
+    background-color: #afafaf;
+}

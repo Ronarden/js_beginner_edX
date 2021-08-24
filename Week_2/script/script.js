@@ -1,16 +1,22 @@
-
 var wordTemplate = 'cat';
 var i = 0;
-//var displayWord = document.querySelector("#wordTemplate");
-
-
-function compareText() {
+var j = 0;
+//let the dom be loaded and then add "cat" as the first word.
+//It was wrong to no wait on it!
+document.addEventListener("DOMContentLoaded", function(event) {
+  console.log("DOM fully loaded and parsed");
   document.getElementById('wordTemplate').innerHTML = wordTemplate;
-  var word = document.getElementById("typedWord").value;
-    whatYouTyped.innerHTML = typedWord.value;  
-    document.getElementById('wordTemplate').innerHTML = wordTemplate;
+});
 
-if (typedWord.value === wordTemplate) {
+
+function compareText() 
+{
+  var word = document.getElementById("typedWord").value;
+  whatYouTyped.innerHTML = typedWord.value;  
+  document.getElementById('wordTemplate').innerHTML = wordTemplate;
+
+  if (typedWord.value === wordTemplate)
+  {
     i = i+1; //counts how many success the user got!
     outcome.innerHTML = 'Success! Streak of: ' + i;
     console.log(i);
@@ -20,13 +26,13 @@ if (typedWord.value === wordTemplate) {
     wordTemplate = possValues[Math.round((possValues.length-1)*Math.random())];
     console.log(wordTemplate);
     document.getElementById('wordTemplate').innerHTML = wordTemplate;
-    //change value of wordTemplate
-      } 
-}
+      // code block to be executed
+    }
+  }
 
-/*
+  /*
 polish:
-*get the first word to display immediatly.
+*get the first word to display immediatly. DONE!!!! Had to wait on the DOM to be ready! Yeehaa.
 *showing of the highscore
 
 
