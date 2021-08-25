@@ -3,12 +3,12 @@ var i = 0;
 var j = 0;
 //let the dom be loaded and then add "cat" as the first word.
 //It was wrong to no wait on it!
-document.addEventListener("DOMContentLoaded", function(event) {
+/*document.addEventListener("DOMContentLoaded", function(event) {
   console.log("DOM fully loaded and parsed");
   document.getElementById('wordTemplate').innerHTML = wordTemplate;
 });
-
-
+*/
+document.getElementById('wordTemplate').innerHTML = wordTemplate;
 function compareText() 
 {
   var word = document.getElementById("typedWord").value;
@@ -35,7 +35,7 @@ function compareText()
 
   /*
 polish:
-*get the first word to display immediatly. DONE!!!! Had to wait on the DOM to be ready! Yeehaa.
+*get the first word to display immediatly. DONE!!!! Had to wait on the DOM to be ready! Yeehaa. Or put the script link at the end of the html ... surprisedpikachuface
 *showing of the highscore
 
 
