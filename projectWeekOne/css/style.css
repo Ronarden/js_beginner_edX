@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(52, 63, 83);
+    color: rgb(247, 247, 247);
+}
+#outcome{
+    background: cadetblue;
+    width: 150px;
+}
+
+#typedWord{
+    border: 2px;
+}
